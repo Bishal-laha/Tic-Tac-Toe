@@ -44,7 +44,7 @@ function Board({ onExit, reloadData }) {
 
             <div>
                 <button onClick={handleExit} className='text-white font-semibold p-3 rounded-md duration-150 bg-rose-700 hover:duration-150 hover:bg-rose-600 mt-5'>Exit Game</button>
-                <p className="opacity-80 text-gray-300 text-[0.8rem]">Exit Game will clear all stored score data of player</p>
+                <p className="opacity-80 text-black mt-2 text-[0.8rem]">Exit Game will clear all stored score data of player</p>
             </div>
 
         </div>
