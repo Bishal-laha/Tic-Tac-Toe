@@ -26,7 +26,7 @@ function Board({ onExit, reloadData }) {
             {/* This logic is for conditional rendering if the player wins or draws then congratulations message and Play again along with score will be shown else game board will be shown */}
             {res.isGameOver ?
                 (<div className='flex flex-col justify-center p-2 shadow-sm bg-[rgba(175,247,235,0.2)] mb-5 rounded-lg'>
-                    <h3 className='text-center text-[1.5rem] font-bold text-teal-700 '>Congratulations!! {res.message}</h3>
+                    <h3 className='text-center text-[1.5rem] font-bold text-teal-700 '>{res.message}</h3>
                     <button className='text-white font-semibold p-3 rounded-md duration-150 bg-indigo-700 hover:duration-150 hover:bg-indigo-600 mt-5' onClick={resetGame}>Play Again</button>
                 </div>) :
 
