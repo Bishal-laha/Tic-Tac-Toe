@@ -16,7 +16,6 @@ function Board({ onExit, reloadData }) {
         localStorage.removeItem("playerScore");
         exitGame();
         onExit();
-        toast.success("Game Exited..Data all cleaned..");
     }
 
     return (
@@ -43,7 +42,10 @@ function Board({ onExit, reloadData }) {
                 <p className='text-red-600'>Player {playerData.player2}<span> Score : {score ? score.player2Score : 0}</span></p>
             </div>
 
-            <button onClick={handleExit} className='text-white font-semibold p-3 rounded-md duration-150 bg-rose-700 hover:duration-150 hover:bg-rose-600 mt-5'>Exit Game</button>
+            <div>
+                <button onClick={handleExit} className='text-white font-semibold p-3 rounded-md duration-150 bg-rose-700 hover:duration-150 hover:bg-rose-600 mt-5'>Exit Game</button>
+                <p className="opacity-80 text-gray-300 text-[0.8rem]">Exit Game will clear all stored score data of player</p>
+            </div>
 
         </div>
     )
