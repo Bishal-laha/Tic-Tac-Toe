@@ -41,9 +41,9 @@ const useTicTacToe = (playerData,reloadData)=>{
         //This is for getting current status of the game
         const winner = getWinner(board);
         if(winner)
-            return {isGameOver:true,message:`Player ${winner === "X" ? player1 : player2} won the game.`}
+            return {isGameOver:true,message:`Congratulations!! Player ${winner === "X" ? player1 : player2} won the game.`}
         if(!board.includes(null))
-            return {isGameOver:true,message:"Game is Draw."}
+            return {isGameOver:true,message:"OOPS!! Game is Draw."}
         else
             return {isGameOver:false, message:`Player ${isXPlayerTurn ? "X" : "O"} turn is now.`}
     }
