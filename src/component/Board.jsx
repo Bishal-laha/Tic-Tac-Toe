@@ -16,6 +16,7 @@ function Board({ onExit, reloadData }) {
         localStorage.removeItem("playerScore");
         exitGame();
         onExit();
+        toast.success("Game Exited..Data all cleaned..");
     }
 
     return (
